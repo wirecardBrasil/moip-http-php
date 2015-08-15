@@ -1,8 +1,8 @@
 {
-    "name": "moip/moip-sdk-php",
+    "name": "moip/moip-http-php",
     "description": "Facilitar a implementação da interface HTTPRequest",
     "keywords": ["libraries", "moip", "http"],
-    "homepage": "https://github.com/moip/moip-sdk-php",
+    "homepage": "https://github.com/moip/moip-http-php",
     "license": "MIT",
     "type": "libraries",
     "authors": [
