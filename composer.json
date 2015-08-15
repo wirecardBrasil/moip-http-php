@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Moip\\MoipHttpPhp": "src/"
+            "Moip\\MoipHttpPhp\\": "src/"
         }
     },
     "extra": {
