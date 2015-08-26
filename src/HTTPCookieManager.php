@@ -1,6 +1,6 @@
 <?php
 
-namespace Moip\MoipHttpPhp;
+namespace Moip\Http;
 
 use ArrayIterator;
 use RuntimeException;
@@ -205,7 +205,7 @@ class HTTPCookieManager implements CookieManager
     }
 
     /**
-     * @param  Moip\MoipHttpPhp\Cookie $cookie
+     * @param  Moip\Http\Cookie $cookie
      * @param  string|int $domain
      */
     public function unserializeCookie($cookie, $domain)

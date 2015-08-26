@@ -1,6 +1,6 @@
 <?php
 
-namespace Moip\MoipHttpPhp;
+namespace Moip\Http;
 
 /**
  * Interface para definição de um objeto que fará uma requisição HTTP.
@@ -79,7 +79,7 @@ interface HTTPRequest
     /**
      * Autentica uma requisição HTTP.
      *
-     * @param \Moip\MoipHttpPhp\HTTPAuthenticator $authenticator
+     * @param \Moip\Http\HTTPAuthenticator $authenticator
      */
     public function authenticate(HTTPAuthenticator $authenticator);
 
@@ -103,14 +103,14 @@ interface HTTPRequest
     /**
      * Recupera a resposta da requisição.
      *
-     * @return \Moip\MoipHttpPhp\HTTPResponse
+     * @return \Moip\Http\HTTPResponse
      */
     public function getResponse();
 
     /**
      * Abre a requisição.
      *
-     * @param \Moip\MoipHttpPhp\HTTPConnection $httpConnection Conexão HTTP relacionada com essa requisição
+     * @param \Moip\Http\HTTPConnection $httpConnection Conexão HTTP relacionada com essa requisição
      */
     public function open(HTTPConnection $httpConnection);
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Moip\MoipHttpPhp;
+namespace Moip\Http;
 
 use BadMethodCallException;
 use InvalidArgumentException;
@@ -117,7 +117,7 @@ class HTTPConnection extends AbstractHttp
      *
      * @throws \InvalidArgumentException Se o nome ou o valor do campo não forem valores scalar.
      * 
-     * @see \Moip\MoipHttpPhp\HTTPRequest::addRequestHeader()
+     * @see \Moip\Http\HTTPRequest::addRequestHeader()
      */
     public function addHeader($name, $value, $override = true)
     {
@@ -127,8 +127,8 @@ class HTTPConnection extends AbstractHttp
     /**
      * Limpa os campos de cabeçalho e de requisição definidos anteriormente.
      *
-     * @see \Moip\MoipHttpPhp\HTTPConnection::clearHeaders()
-     * @see \Moip\MoipHttpPhp\HTTPConnection::clearParameters()
+     * @see \Moip\Http\HTTPConnection::clearHeaders()
+     * @see \Moip\Http\HTTPConnection::clearParameters()
      */
     public function clear()
     {
@@ -274,7 +274,7 @@ class HTTPConnection extends AbstractHttp
     /**
      * Recupera o gerenciador de Cookies.
      *
-     * @return \Moip\MoipHttpPhp\CookieManager
+     * @return \Moip\Http\CookieManager
      */
     public function getCookieManager()
     {
@@ -406,7 +406,7 @@ class HTTPConnection extends AbstractHttp
     /**
      * Cria uma instância de um objeto de requisição HTTP.
      *
-     * @return \Moip\MoipHttpPhp\HTTPRequest
+     * @return \Moip\Http\HTTPRequest
      */
     public function newRequest()
     {
@@ -416,7 +416,7 @@ class HTTPConnection extends AbstractHttp
     /**
      * Define um autenticador HTTP.
      *
-     * @param \Moip\MoipHttpPhp\HTTPAuthenticator $httpAuthenticator
+     * @param \Moip\Http\HTTPAuthenticator $httpAuthenticator
      */
     public function setAuthenticator(HTTPAuthenticator $httpAuthenticator)
     {
@@ -443,7 +443,7 @@ class HTTPConnection extends AbstractHttp
     /**
      * Define um gerenciador de cookies para essa conexão.
      *
-     * @param \Moip\MoipHttpPhp\CookieManager $cookieManager
+     * @param \Moip\Http\CookieManager $cookieManager
      */
     public function setCookieManager(CookieManager $cookieManager)
     {

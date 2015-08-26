@@ -1,6 +1,6 @@
 <?php
 
-namespace Moip\MoipHttpPhp;
+namespace Moip\Http;
 
 use RuntimeException;
 use UnexpectedValueException;
@@ -18,14 +18,14 @@ class CURL extends AbstractHTTPRequest
     private $curlResource;
 
     /**
-     * @var \Moip\MoipHttpPhp\HTTPConnection
+     * @var \Moip\Http\HTTPConnection
      */
     private $httpConnection;
 
     /**
      * Fecha a requisição.
      * 
-     * @see \Moip\MoipHttpPhp\HTTPRequest::close()
+     * @see \Moip\Http\HTTPRequest::close()
      */
     public function close()
     {
@@ -45,7 +45,7 @@ class CURL extends AbstractHTTPRequest
      *
      * @throws \BadMethodCallException Se não houver uma conexão inicializada.
      * 
-     * @see \Moip\MoipHttpPhp\HTTPRequest::execute()
+     * @see \Moip\Http\HTTPRequest::execute()
      */
     public function execute($path = '/', $method = HTTPRequest::GET)
     {
@@ -123,9 +123,9 @@ class CURL extends AbstractHTTPRequest
     /**
      * Abre a requisição.
      *
-     * @param \Moip\MoipHttpPhp\HTTPConnection $httpConnection Conexão HTTP relacionada com essa requisição
+     * @param \Moip\Http\HTTPConnection $httpConnection Conexão HTTP relacionada com essa requisição
      * 
-     * @see \Moip\MoipHttpPhp\HTTPRequest::open()
+     * @see \Moip\Http\HTTPRequest::open()
      */
     public function open(HTTPConnection $httpConnection)
     {
