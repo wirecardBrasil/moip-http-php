@@ -31,19 +31,9 @@
 
 ## Instalação
 
-#### Usando composer
+#### Usando Terminal
 
-Adicione o trecho abaixo em seu arquivo `composer.json`:
-
-    {
-        "require" : {
-            "moip/moip-http-php" : "dev-master"
-        }
-    }
-    
-Execute:
-
-    composer install
+    composer require moip/moip-http-php 1.@stable
 
 ## Documentação
 
