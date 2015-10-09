@@ -89,7 +89,7 @@ class HTTPConnection extends AbstractHttp
      *
      * @param string $client
      */
-    public function __construct($client)
+    public function __construct($client = 'SDK PHP')
     {
         if (self::$userAgent == null) {
             $locale = setlocale(LC_ALL, null);
