@@ -1,4 +1,4 @@
-# Http Moip para o SDK
+# Http Moip para o SDK - DEPRECATED
 
 > Estado atual do sdk
 
